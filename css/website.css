@@ -1,0 +1,114 @@
+/* Opdracht 1: eenvoudig kleurenschema met motivatie. */
+/* Opdracht 1 en 4: kleurvariabelen die op alle pagina's worden hergebruikt. */
+:root {
+    --kleur-primair: #173f5f; /* mijn favoriete kleuren zijn blauw achtig kleuren */
+    --kleur-secundair: #20639b;
+    --kleur-accent: #f6c85f; /*geel voelt gewoon goed om bij te mixen */
+    --kleur-achtergrond: #f4f7f9; /* wit is gewoon leuke moderne default */
+}
+
+/* Opdracht 4: eigen CSS bovenop Bootstrap. */
+body {
+    background-color: var(--kleur-achtergrond);
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero {
+    background-color: var(--kleur-primair);
+    color: white;
+}
+
+.hero h1 {
+    color: var(--kleur-accent);
+}
+
+.btn-primary {
+    background-color: var(--kleur-secundair);
+    border-color: var(--kleur-secundair);
+}
+
+.btn-primary:hover {
+    background-color: var(--kleur-primair);
+    border-color: var(--kleur-primair);
+}
+
+.card {
+    border: 1px solid #ddd;
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+/* Opdracht 4: eigen Flexbox-layout voor de feitenkaarten. */
+.feiten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feiten div {
+    display: flex;
+    flex: 1 1 200px;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-left: 5px solid var(--kleur-accent);
+}
+
+.feiten strong {
+    color: var(--kleur-secundair);
+    font-size: 1.4rem;
+}
+
+.contact-form {
+    max-width: 700px;
+}
+
+.video-wrapper,
+.map-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe,
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Opdracht 5: afbeeldingen blijven responsive. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Opdracht 5: extra aanpassing voor kleine schermen. */
+@media (max-width: 576px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+}
