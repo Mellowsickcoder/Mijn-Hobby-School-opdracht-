@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Een eenvoudige galerij met foto's van poolbiljart.">
+    <title>Galerij</title>
+    <!-- Opdracht 5: favicon voor alle pagina's. -->
+    <link rel="icon" type="image/jpeg" href="images/Billiard_pool.jpg">
+    <!-- Opdracht 1: twee Google Fonts voor de website. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Opdracht 2: Bootstrap CSS staat vóór de eigen CSS. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/website.css">
+</head>
+
+<body>
+    <!-- Opdracht 2: responsive navbar met actieve pagina Galerij. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mijn hobby</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallerij.html">Galerij</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1>Galerij</h1>
+        <p class="lead">Een paar foto's die bij mijn hobby passen.</p>
+        <!-- Opdracht 3 en 5: responsive Bootstrap-grid en responsive afbeeldingen. -->
+        <div class="row g-4">
+            <div class="col-12 col-md-4"><img src="images/POV.jpg" class="img-fluid rounded"
+                    alt="Uitzicht op een pooltafel"></div>
+            <div class="col-12 col-md-4"><img src="images/High_Shot.jpg" class="img-fluid rounded"
+                    alt="Pooltafel van boven"></div>
+            <div class="col-12 col-md-4"><img src="images/Ball_Aim.jpg" class="img-fluid rounded"
+                    alt="Richten op een bal"></div>
+            <div class="col-12 col-md-4"><img src="images/Legendary_Gallery8.jpg" class="img-fluid rounded"
+                    alt="Poolspeler tijdens een wedstrijd"></div>
+            <div class="col-12 col-md-4"><img src="images/Gallery4.jpg" class="img-fluid rounded"
+                    alt="Poolballen op tafel"></div>
+            <div class="col-12 col-md-4"><img src="images/Gallery6.jpg" class="img-fluid rounded"
+                    alt="Pooltafel met ballen"></div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2026 Mijn hobby</p>
+    </footer>
+    <!-- Opdracht 2: Bootstrap JavaScript voor het mobiele menu. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

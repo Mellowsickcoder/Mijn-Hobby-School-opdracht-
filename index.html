@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mijn hobbywebsite over poolbiljart, met foto's, regels en technieken.">
+    <title>Mijn hobby</title>
+    <!-- Opdracht 5: favicon voor alle pagina's. -->
+    <link rel="icon" type="image/jpeg" href="images/Billiard_pool.jpg">
+    <!-- Opdracht 1: twee Google Fonts voor de website. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Opdracht 2: Bootstrap CSS staat voor de eigen CSS. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/website.css">
+</head>
+
+<body>
+    <!-- Opdracht 2: responsive navbar met inklapbaar menu en actieve pagina. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mijn hobby</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallerij.html">Galerij</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Opdracht 2: Bootstrap hero met titel, subtitel en call-to-action. -->
+        <section class="hero py-5">
+            <div class="container py-4">
+                <!-- Opdracht 3: Bootstrap badge. -->
+                <span class="badge bg-warning text-dark mb-3">Mijn favoriete hobby</span>
+                <h1 class="display-3">Poolbiljart</h1>
+                <p class="lead">Een rustig en tactisch spel waarbij je met een keu de ballen in de pockets speelt.</p>
+                <a class="btn btn-primary" href="details.html">Lees de details</a>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="mb-4">Ontdek mijn hobby</h2>
+            <!-- Opdracht 3: Bootstrap grid met drie cards, ruimte en gelijke hoogte. -->
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="images/Billiard_pool.jpg" class="card-img-top img-fluid" alt="Pooltafel">
+                        <div class="card-body">
+                            <h3 class="card-title h5">De regels</h3>
+                            <p class="card-text">Leer hoe een potje pool begint en hoe je de zwarte bal speelt.</p>
+                            <a href="details.html" class="btn btn-primary">Bekijk regels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="images/Hand_positions.jpg" class="card-img-top img-fluid" alt="Handpositie bij pool">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Techniek</h3>
+                            <p class="card-text">Een goede houding en een rustige beweging helpen bij elke stoot.</p>
+                            <a href="details.html" class="btn btn-primary">Leer technieken</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="images/Gallery5.jpg" class="card-img-top img-fluid" alt="Poolballen op tafel">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Mijn foto's</h3>
+                            <p class="card-text">Bekijk een aantal foto's van pooltafels, ballen en wedstrijden.</p>
+                            <a href="gallerij.html" class="btn btn-primary">Naar de galerij</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opdracht 4: eigen Flexbox-sectie buiten het Bootstrap-grid. -->
+        <section class="container pb-5">
+            <h2>Waarom ik pool leuk vind</h2>
+            <div class="feiten">
+                <div><strong>1</strong><span>Je hebt concentratie nodig.</span></div>
+                <div><strong>2</strong><span>Iedere stoot is anders.</span></div>
+                <div><strong>3</strong><span>Je kunt alleen of samen spelen.</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2026 Mijn hobby</p>
+    </footer>
+    <!-- Opdracht 2: Bootstrap JavaScript voor het mobiele menu. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op over mijn poolbiljart hobby en bezoek de gekozen locatie.">
+    <title>Contact</title>
+    <!-- Opdracht 5: favicon voor alle pagina's. -->
+    <link rel="icon" type="image/jpeg" href="images/Billiard_pool.jpg">
+    <!-- Opdracht 1: twee Google Fonts voor de website. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Opdracht 2: Bootstrap CSS staat vóór de eigen CSS. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/website.css">
+</head>
+
+<body>
+    <!-- Opdracht 2: responsive navbar met actieve pagina Contact. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mijn hobby</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallerij.html">Galerij</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1>Contact</h1>
+        <p class="lead">Stuur een bericht als je een uitje wilt plannen.</p>
+        <!-- Opdracht 3: Bootstrap contactformulier met labels en form-controls. -->
+        <form class="contact-form">
+            <div class="mb-3"><label for="naam" class="form-label">Naam</label><input type="text" class="form-control"
+                    id="naam" required></div>
+            <div class="mb-3"><label for="email" class="form-label">E-mail</label><input type="email"
+                    class="form-control" id="email" required></div>
+            <div class="mb-3">
+            <label for="onderwerp" class="form-label">Onderwerp</label>
+            <select class="form-select" id="onderwerp">
+                <option>Een afspraak</option>
+            </select>
+            </div>
+            <div class="mb-3"><label for="bericht" class="form-label">Bericht</label><textarea class="form-control"
+                    id="bericht" rows="5" required></textarea></div>
+            <!-- Opdracht 3: checkbox voor de akkoordverklaring. -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="akkoord" required>
+                <label class="form-check-label" for="akkoord">Ik ga akkoord met deze verklaring.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Versturen</button>
+        </form>
+    </main>
+
+    <!-- Extra: responsive kaart met een wrapper-div. -->
+    <section class="container pb-5">
+        <h2>Waar ik speel</h2>
+        <div class="map-wrapper ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6790342791123!2d3.8886980875621933!3d51.500757238518304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c489d0de8ed309%3A0xf4d126232b8408e4!2sSport%20Pub%20Goes!5e0!3m2!1sen!2sus!4v1794314141747!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2026 Mijn hobby</p>
+    </footer>
+    <!-- Opdracht 2: Bootstrap JavaScript voor het mobiele menu. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
